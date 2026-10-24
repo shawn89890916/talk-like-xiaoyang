@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 9,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short chat preference for responding to an invitation before the details are known.",
+  "cases": [
+    {
+      "id": "calibration.chat_invitation_details",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "熟悉的同学约一起参加活动；本人有点想去，但还不知道时间和安排，想先问清楚再决定。",
+      "preferred_text": "可以啊可以啊\n具体啥时候 在哪吗\n我看一下时间这些",
+      "case_observation": "先重复表达愿意，再问时间和地点，最后说会看时间；使用‘啥’和‘这些’，保留重复、空格与换行。",
+      "generalization_limit": "只校准这个熟人邀约情境；不推导所有邀约都重复答应、使用‘啥’或按此顺序，也不推断换行对应消息气泡。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This is a hypothetical invitation, not a real plan or commitment.",
+    "Preserve the owner's line breaks and spacing without assigning delivery boundaries.",
+    "Do not mechanically repeat words or colloquial markers in unrelated contexts."
+  ]
+}

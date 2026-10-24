@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "validation_type": "artifact_data_and_privacy_only",
+  "source_self_messages": 9661,
+  "source_full_messages": 22547,
+  "candidate_messages": 9514,
+  "publication_file_count": 38,
+  "rule_count": 22,
+  "synthetic_case_count": 10,
+  "checks": [
+    "explicit file allowlist",
+    "source SHA-256 and aggregate counts",
+    "JSON structure and rule states",
+    "private contact and account identifiers absent",
+    "credential patterns and source tokens absent",
+    "no private memory-store references",
+    "no verbatim long private messages",
+    "UTF-8 text without replacement characters",
+    "aggregate marker totals and chart outputs",
+    "synthetic examples separated from observed evidence"
+  ],
+  "owner_voice_quality_evaluation": "twenty_one_nonblind_synthetic_cases_with_one_unranked_variant_set",
+  "owner_blind_evaluation": "not_run",
+  "calibration_case_count": 21
+}

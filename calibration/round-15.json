@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 15,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Owner selected an assistant-written option in the current conversation; the situation was hypothetical.",
+  "scope_note": "One familiar-peer chat reply, collected as a quick style test.",
+  "cases": [
+    {
+      "id": "calibration.chat_review_after_dinner",
+      "mode": "chat",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "熟悉的同学请本人看活动方案；本人还没看，打算吃完饭再看。",
+      "preferred_text": "哦行，我吃完饭看",
+      "case_observation": "先用简短回应接住请求，再给出具体时间。",
+      "generalization_limit": "只记录本次假设情境的选择，不推导为固定开头或所有答应事项都需给时间。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a hypothetical request, not a real commitment to review a document.",
+    "The selected assistant-written option is a context-scoped preference, not proof of original authorship."
+  ]
+}

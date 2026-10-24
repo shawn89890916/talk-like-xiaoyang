@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 7,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round records one short email-style scenario to a familiar teacher.",
+  "cases": [
+    {
+      "id": "calibration.formal_email_partial_material",
+      "mode": "formal_short_email",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "给熟悉的老师发邮件：材料其他部分已经填好，成绩单还在等；希望先发已完成内容确认，之后再补成绩单。",
+      "preferred_text": "老师你好\n其他我都填好了 除了成绩单还在等\n我先把已完成的给你确认可以吧 嘻",
+      "case_observation": "先称呼并说明其他部分已完成，再提成绩单还在等，随后问能否先确认已完成内容；对熟悉老师使用直接口语表达，以‘嘻’收尾。保留原有换行和空格。",
+      "generalization_limit": "这是面向熟悉老师的假设邮件，不代表给所有老师或正式对象写邮件都使用相同语气、称呼或收尾。"
+    }
+  ],
+  "interpretation_constraints": [
+    "The missing transcript and intended submission are hypothetical, not actual application facts.",
+    "This is one synthetic short email example, not evidence about full formal documents.",
+    "Preserve the owner's line breaks and spaces as written."
+  ]
+}

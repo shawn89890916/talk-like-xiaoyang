@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 8,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner choice in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short project-note preference for a less familiar collaborator.",
+  "cases": [
+    {
+      "id": "calibration.formal_project_choice",
+      "mode": "formal_project_note",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "向一位不太熟的合作老师说明试过方案 A 和 B，现阶段只用基础功能，先选设置较少的 A，B 的额外功能暂时用不上。",
+      "preferred_text": "这次先用A吧，比较简单，目前的需求也够用。B多出来的功能暂时用不上，后面需要了再考虑换。",
+      "case_observation": "先报当前决定，再用简单、够用解释选择；补充 B 暂时用不上，并保留后续调整的余地。语气自然直接，仍是完整的说明段落。",
+      "generalization_limit": "只确认本次合作项目说明中的偏好，不推导为所有正式内容都使用相同语气或句式。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a non-blind choice among assistant-written synthetic options, not a real project decision.",
+    "Unselected variants do not establish dislike of every word or construction in them.",
+    "No real tool preference or future plan is inferred."
+  ]
+}

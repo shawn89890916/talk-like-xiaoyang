@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 6,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short article-style usage preference and preserves the owner's line break without inferring message boundaries.",
+  "cases": [
+    {
+      "id": "calibration.article_usage_unmeasured",
+      "mode": "article_short",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "介绍一个已使用两周的任务工具：临时多出任务时可拖动调整，主观上觉得方便，但尚未统计效率数据。",
+      "preferred_text": "这个挺方便的 临时多出任务也可以直接调\n我已经用两周了，就是具体数据可能还没统计",
+      "case_observation": "先给简短感受，再补功能和使用时长，最后保留数据尚未统计的不确定性；连接和标点较松。原答案含一个换行，但没有说明它代表消息分段。",
+      "generalization_limit": "这是合成体验段落，不能当作真实使用经历或效果结论；不推断换行代表多条消息。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a synthetic writing exercise, not a report of a real tool or usage history.",
+    "The stated convenience is subjective in the hypothetical scenario; no measured efficiency improvement is claimed.",
+    "Preserve the line break as written without assigning it a delivery format."
+  ]
+}

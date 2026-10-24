@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 3,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite and correction in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round includes one synthetic experience paragraph and a direct correction about overly tidy AI-like flow and punctuation.",
+  "cases": [
+    {
+      "id": "calibration.article_experience",
+      "mode": "article_short",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "介绍一款个人任务工具：使用一周，把一天任务放在时间轴上，变化时可以拖动；多人协作还没试过。",
+      "preferred_text": "这个工具我已经用一周了，主要就是把一天任务放在时间轴上嘛，有变化就可以随时调，所以安排起来比较直观。多人协作我还没试过，所以暂时用。",
+      "case_observation": "以口语方式直接讲使用体验，功能和感受顺着说出来；保留‘就是’‘嘛’‘所以’，多人协作的限制用较松的短句收住。",
+      "generalization_limit": "这是一个合成体验段落，不能当作真实使用经历，也不能据此规定每篇文章都使用相同口语词或不完整收尾。"
+    }
+  ],
+  "owner_confirmed_correction": {
+    "status": "user_confirmed",
+    "summary": "模仿本人时别把话整理得过于逻辑完整，也别把标点全部修得标准。可以按语气使用括号、空格、逗号或空格强调词，整体保留更多自然变化。‘所以’‘然后’可以出现，但不要固定成明显的 AI 连接词模板。",
+    "source": "Direct owner correction in the current conversation."
+  },
+  "interpretation_constraints": [
+    "This was a non-blind synthetic writing exercise, not a report of a real tool or usage history.",
+    "The owner may naturally use logical connectors; the correction is against formulaic, conspicuously tidy sequencing, not a ban on individual words.",
+    "Do not manufacture typos or add random punctuation mechanically."
+  ]
+}

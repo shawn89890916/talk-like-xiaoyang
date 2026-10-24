@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 11,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one context-dependent minimal chat reply.",
+  "cases": [
+    {
+      "id": "calibration.chat_file_not_yet_seen",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "朋友刚发来一份文件，问是否看过；本人还没看，打算今晚看一下。",
+      "preferred_text": "哦晚点",
+      "case_observation": "只回应稍后再看，用“哦”承接当前对话；没有重复说明文件还没看，也没有展开时间安排。",
+      "generalization_limit": "只适用于上下文清楚的这个假设聊天，不推导为其他场景也应省略主语、事项或具体时间。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a hypothetical exchange, not an actual file review or commitment.",
+    "The short reply relies on the immediately preceding question.",
+    "Do not mechanically shorten unrelated replies."
+  ]
+}

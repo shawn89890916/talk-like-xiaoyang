@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 2,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner choice in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one article paragraph preference. It does not establish a general long-form structure.",
+  "cases": [
+    {
+      "id": "calibration.article_choice_expanded",
+      "mode": "article_short",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "解释试过 A 和 B 后选择 A：目前只用基础功能，A 设置少，B 多出的功能暂时用不上。",
+      "preferred_text": "我试了A和B，最后还是选了A。主要是我现在用到的功能比较基础，A的设置也少一点，平时安排起来简单些。B功能确实多，不过多出来的部分我目前用不上。",
+      "case_observation": "先交代两者都试过和最终选择，再说明当前使用需求与设置简便，最后承认 B 功能更多并说明目前用不上。展开比第一轮短段落更完整，仍保持具体、直接。",
+      "generalization_limit": "只校准这个合成短段落及其展开顺序，不能据此推断完整长文结构或所有比较文章都应采用相同顺序。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a non-blind choice among assistant-written synthetic options, not an original historical writing sample.",
+    "Unselected variants do not establish dislike of every word or construction in them.",
+    "No actual names, accounts, private context or new personal facts are inferred."
+  ]
+}

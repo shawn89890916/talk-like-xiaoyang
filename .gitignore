@@ -1,0 +1,17 @@
+*.jsonl
+*.db
+*.db-*
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.log
+*.key
+*keys*.json
+.env*
+__pycache__/
+raw/
+private/
+local/
+analysis-review*

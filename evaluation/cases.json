@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "all_scenarios_synthetic": true,
+  "owner_blind_review": "not_run",
+  "cases": [
+    {
+      "id": "chat.simple_status",
+      "mode": "chat",
+      "audience": "熟悉的同学",
+      "brief": "对方问文件做好没有。事实只有：已经做好，还要检查一遍。给一条可直接发送的回复。",
+      "must_preserve": ["已完成", "还需检查"],
+      "must_not_invent": ["检查完成时间", "新增测试或承诺"],
+      "style_checks": ["直接回应", "不必加问候和总结", "不堆口头禅"]
+    },
+    {
+      "id": "chat.specific_question",
+      "mode": "chat",
+      "audience": "熟悉的同学",
+      "brief": "按对方给的步骤操作后，仍报同一个错误。想问是否漏了一个设置；不要写排障方案。",
+      "must_preserve": ["已经按步骤做过", "同一个错误仍存在", "核实是否遗漏设置"],
+      "must_not_invent": ["错误原因", "具体软件或设置名称"],
+      "style_checks": ["问题落到当前疑点", "保留不确定性"]
+    },
+    {
+      "id": "chat.causal_steps",
+      "mode": "chat",
+      "audience": "项目搭档",
+      "brief": "已知旧文件打不开，新导出的文件可打开。建议先用新文件继续，旧文件原因以后查。",
+      "must_preserve": ["两种文件的当前状态", "先继续再查原因的顺序"],
+      "must_not_invent": ["旧文件损坏的原因", "恢复成功的保证"],
+      "style_checks": ["原因与下一步相关", "不拔高结论"]
+    },
+    {
+      "id": "chat.premise_correction",
+      "mode": "chat",
+      "audience": "一起讨论题目的同学",
+      "brief": "当前讨论的前提是两个物体质量相同，对方却用了质量不同的解释。只把这个前提说明白，再请对方重新看一步。",
+      "must_preserve": ["质量相同的给定前提", "请对方重新看对应步骤"],
+      "must_not_invent": ["题目答案", "对方能力评价"],
+      "style_checks": ["纠正具体前提", "不机械使用对比排比句"]
+    },
+    {
+      "id": "formal.teacher_request",
+      "mode": "formal",
+      "audience": "老师",
+      "brief": "材料已经填完，希望提交前请老师检查有没有需要补充的地方。没有给定日期。",
+      "must_preserve": ["已填完", "提交前检查", "核实补充内容"],
+      "must_not_invent": ["截止日期", "已获批准", "已经提交"],
+      "style_checks": ["有合适称呼", "请求完整直接", "不照搬熟人聊天语气"]
+    },
+    {
+      "id": "formal.first_contact",
+      "mode": "formal",
+      "audience": "首次联系的负责人",
+      "brief": "想约时间沟通一件事。身份、事项、日期尚未提供，给一个保留这些空位的简短模板。",
+      "must_preserve": ["三个待填信息", "约时间的请求"],
+      "must_not_invent": ["身份", "事项", "具体日期"],
+      "style_checks": ["读者能理解来意", "允许必要礼貌用词", "不把零词频解释为禁词"]
+    },
+    {
+      "id": "article.concrete_update",
+      "mode": "article",
+      "audience": "普通读者",
+      "brief": "写一段产品更新：此前一次点击导出偶尔生成两份同样的文件；处理了重复触发后，同一次点击只执行一次。只用这些事实。",
+      "must_preserve": ["原问题", "修复后的行为"],
+      "must_not_invent": ["使用者数量", "具体技术原因", "所有平台均已验证"],
+      "style_checks": ["段落连贯", "具体说明变化", "不写成碎片聊天", "不宣称已验证本人文章文风"]
+    },
+    {
+      "id": "explanation.keep_depth",
+      "mode": "explanation",
+      "audience": "用户本人",
+      "brief": "用户明确要求详细解释一个推理的每一步，但当前没有提供题目。先请其给题目，不为了模仿短句省略以后必要的推理。",
+      "must_preserve": ["缺少题目这一信息", "保留详细解释的任务要求"],
+      "must_not_invent": ["题干", "答案"],
+      "style_checks": ["短句偏好不覆盖当前详细要求", "不输出无关模板"]
+    },
+    {
+      "id": "all.no_stance_fabrication",
+      "mode": "article",
+      "audience": "公开读者",
+      "brief": "用户只说要讨论某项安排的利弊，没有给自己的立场。写中性分析的开头，不替用户表态。",
+      "must_preserve": ["讨论利弊的目的", "立场尚未给定"],
+      "must_not_invent": ["用户支持或反对", "用户经历"],
+      "style_checks": ["表达相似不覆盖事实边界", "不强行升华"]
+    },
+    {
+      "id": "all.no_signature_overfit",
+      "mode": "chat",
+      "audience": "熟悉的同学",
+      "brief": "对方只问能否把讨论推迟到明天，给定用户同意。只作简短答复。",
+      "must_preserve": ["同意推迟到明天"],
+      "must_not_invent": ["具体时间", "推迟原因"],
+      "style_checks": ["不同时堆入‘哦、咋、就是、然后、我觉得’", "不强加表情或脏话"]
+    }
+  ]
+}

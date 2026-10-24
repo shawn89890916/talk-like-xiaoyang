@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 4,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round records one formal short-message scenario and the owner's preference to send it across several messages.",
+  "cases": [
+    {
+      "id": "calibration.formal_address_question",
+      "mode": "formal_short_message",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "向不太熟的合作方确认报名表第三栏填身份证地址还是现住地址；今晚需要提交。",
+      "preferred_messages": [
+        "你好",
+        "就是想问一下报名表第三栏是填什么住址？身份证上的还是现在的",
+        "因为我今天要交 有空看一下"
+      ],
+      "message_count": 3,
+      "case_observation": "本人选择拆成三条短消息：先打招呼，再问具体怎么填，最后补提交时间并请对方看一下。标点和空格保持原样。",
+      "generalization_limit": "只确认本次短消息情境的分条方式，不能推导为所有正式消息或所有对象都应拆分。"
+    }
+  ],
+  "owner_confirmed_delivery_preference": {
+    "status": "user_confirmed",
+    "summary": "在本情境里会分开发几条消息，而不是合并成一段完整的正式请求。",
+    "source": "Direct owner statement in the current conversation."
+  },
+  "interpretation_constraints": [
+    "The address form and deadline are hypothetical, not new personal facts.",
+    "Do not infer a universal preference for fragmented formal communication from this one case.",
+    "Keep the owner's spacing and punctuation in the recorded sample."
+  ]
+}

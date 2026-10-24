@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 5,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner choice in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short chat preference for responding to an uncertain invitation.",
+  "cases": [
+    {
+      "id": "calibration.chat_uncertain_invitation",
+      "mode": "chat",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "朋友约周六下午出去；本人有点想去，但现在不确定是否有空，要到周六上午才能确认。",
+      "preferred_text": "我周六上午再跟你说吧 现在还不太确定",
+      "case_observation": "先交代何时回复，再简单说明当前不确定；不额外解释原因，句间用空格停顿。",
+      "generalization_limit": "只确认这个邀约场景下对该说法的偏好，不推导为所有不确定答复都要采用相同顺序或省略标点。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a non-blind choice among assistant-written synthetic options, not an actual invitation or commitment.",
+    "Unselected variants do not establish dislike of every word or construction in them.",
+    "No real plans, availability or personal facts are inferred."
+  ]
+}

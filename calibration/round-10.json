@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 10,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner choice in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short chat preference for sending partially readable notes.",
+  "cases": [
+    {
+      "id": "calibration.chat_partial_notes",
+      "mode": "chat",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "熟人问能不能发课堂笔记；前半清楚，后几页拍糊，需要晚点重拍。",
+      "preferred_text": "有，我等下发你吧，后面那几页再拍一下",
+      "case_observation": "先答应会发，再说后几页需要重拍；没有展开说明拍糊的原因或重复全部背景。",
+      "generalization_limit": "只确认这个笔记分享情境下对该说法的偏好，不推导为所有部分完成的请求都先答应或省略解释。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a non-blind choice among assistant-written synthetic options, not an actual promise to send notes.",
+    "Unselected variants do not establish dislike of every word or construction in them.",
+    "No real class notes or retaking action is inferred."
+  ]
+}

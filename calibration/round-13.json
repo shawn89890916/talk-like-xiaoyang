@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 13,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short chat reply to an invitation the owner is unlikely to accept.",
+  "cases": [
+    {
+      "id": "calibration.chat_movie_invitation_reluctance",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "熟悉同学约周末看电影；本人更想休息，不太想去。",
+      "preferred_text": "看什么电影？\n我应该不去\n累了",
+      "case_observation": "先问具体看什么，再说‘我应该不去’，最后单独补‘累了’；保留换行与未完全定死的说法。",
+      "generalization_limit": "只校准这个假设邀约；不推导为所有拒绝都先追问、使用‘应该’或拆成三行。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This was a hypothetical invitation, not an actual plan or statement of current fatigue.",
+    "Preserve the owner's wording and line breaks without inferring message bubbles.",
+    "Do not turn the reply into a firmer refusal than the owner wrote."
+  ]
+}

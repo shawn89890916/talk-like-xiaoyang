@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 1,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner choices and rewrites in the current conversation; all situations were hypothetical.",
+  "scope_note": "Preferences are confirmed only for the presented variants and situations. Explanations of a general voice remain hypotheses.",
+  "interaction_preference": {
+    "status": "user_confirmed",
+    "instruction": "校准时用宿主的选项对话框给几种说法，让本人选择；允许自由改写，正文不重复整组选项。",
+    "source": "Direct owner instruction in the current conversation."
+  },
+  "cases": [
+    {
+      "id": "calibration.repeat_advice",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "熟悉的人再次建议按步骤操作，但本人已试过且仍报错。",
+      "preferred_text": "不是，我早就试过了呀，你是搞啥呀？我查一下吧",
+      "case_observation": "先纠正已经尝试的前提，带一点不耐烦，最后转到自己查。",
+      "generalization_limit": "不推导成所有场景都应吐槽，或所有问题都要自己查。"
+    },
+    {
+      "id": "calibration.teacher_check",
+      "mode": "formal_short",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "请平时比较熟悉的老师检查已经填好的材料，确认后再提交。",
+      "preferred_text": "老师我填好了，你帮我看一下有没有问题，我再提交",
+      "case_observation": "称呼后直接说明完成状态，请对方检查，再说明提交顺序。",
+      "generalization_limit": "不推导成所有正式内容都省略标点或使用‘你’。"
+    },
+    {
+      "id": "calibration.video_delivery",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "熟悉朋友问视频是否剪好；基本完成，末段仍需调整，今天发不了。",
+      "preferred_text": "晚点，明天给你吧，我最后一段再调一下",
+      "case_observation": "先回答交付安排，再补充需要调整的位置；没有复述全部完成进度。",
+      "generalization_limit": "‘明天给你’只属于假设回复，不是现实交付承诺。"
+    },
+    {
+      "id": "calibration.tool_intro",
+      "mode": "article_short",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "介绍一个把一天的任务放到时间轴、可拖动调整时间的假设工具。",
+      "preferred_text": "这个工具主要用来安排一天的任务。任务按时间排在时间轴上，临时有变化，可以直接拖动调整。",
+      "case_observation": "先说明用途，再解释呈现和调整方式；本例选择客观说明。",
+      "generalization_limit": "不推导成所有文章必须第三人称，或禁止个人叙述。"
+    },
+    {
+      "id": "calibration.simple_choice",
+      "mode": "chat",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "A 简单且当前够用，B 功能更多但更复杂；计划先用 A，需要时再换 B。",
+      "preferred_text": "先用A吧，简单一点，现在也够用了，后面需要再换B",
+      "case_observation": "先给当前选择，再说明够用的理由，最后保留后续调整。",
+      "generalization_limit": "不把假设工具选择当成真实购买或技术偏好。"
+    },
+    {
+      "id": "calibration.attachment_request",
+      "mode": "formal_short",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "向不太熟悉的合作方要尚未收到的附件，希望今天收到以便明天提交前检查。",
+      "preferred_text": "附件现在还没收到，今天方便发给我吗？明天提交前还需要检查一下",
+      "case_observation": "先指出当前缺口，再用‘方便……吗’提出请求，最后补时间原因；本例没有额外问候。",
+      "generalization_limit": "不推导成正式内容一律省略问候，也不推导为不重视礼貌。"
+    },
+    {
+      "id": "calibration.article_choice",
+      "mode": "article_short",
+      "evidence_kind": "owner_selected_synthetic_option",
+      "scenario": "两个工具都试过，A 设置少，B 功能多；当前只用基础功能，因此选 A。",
+      "preferred_text": "我最后用了A。它的设置少一点，我现在也只用基础功能，B多出来的那些暂时用不上。",
+      "case_observation": "先给已作出的选择，再用设置与当前需求解释选择；句子完整而直接。",
+      "generalization_limit": "只校准这个短段落，不能据此声称已掌握完整长文结构。"
+    }
+  ],
+  "interpretation_constraints": [
+    "Unselected variants do not establish dislike of every word or construction in them.",
+    "Selected assistant-written options are owner preferences, not proof of original authorship.",
+    "The two owner-written replies are synthetic answers, not excerpts from historical WeChat conversations.",
+    "No actual names, accounts, private context or new personal facts are inferred."
+  ]
+}

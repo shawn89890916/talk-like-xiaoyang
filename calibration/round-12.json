@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 12,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner rewrite in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round adds one short chat example of giving a familiar peer specific design feedback.",
+  "cases": [
+    {
+      "id": "calibration.chat_design_feedback",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_reply",
+      "scenario": "熟悉的同学问设计图怎么样；整体可以，只有右下角稍挤，希望对方调整。",
+      "preferred_text": "哦挺好的啊，\n可能右下角有点挤调一下\n其他没什么问题",
+      "case_observation": "先肯定整体，再用‘可能’缓和指出具体位置并提出调整，最后说明其余部分没有问题；保留原有逗号和换行。",
+      "generalization_limit": "只校准这个熟人设计反馈情境，不推导所有意见都要先夸、使用‘可能’或按三行表达。"
+    }
+  ],
+  "interpretation_constraints": [
+    "This is a hypothetical design review, not a real evaluation of anyone's work.",
+    "Preserve punctuation and line breaks without inferring separate message bubbles.",
+    "Do not add praise where the scenario does not support it."
+  ]
+}

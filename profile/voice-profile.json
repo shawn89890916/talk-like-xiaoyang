@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "version": "0.1.17",
+  "language": "zh-CN",
+  "updated_at": "2026-10-24",
+  "owner_review_status": "partially_calibrated",
+  "scope": "Observable expression and discourse habits; not private facts or a complete model of cognition.",
+  "source_stats": "evidence/corpus-stats.json",
+  "source_sets": {
+    "wechat": {
+      "report": "evidence/language-markers.json",
+      "used_for": ["Chinese chat observations", "punctuation and phrase frequencies"],
+      "includes_obsidian": false
+    },
+    "obsidian_personal_narrative": {
+      "report": "evidence/obsidian-writing.md",
+      "sample_count": 1,
+      "provenance": "owner_provided_current_version; sentence_level_editing_history_unknown",
+      "used_for": ["low_confidence_English_personal_narrative_structure_hypothesis"],
+      "includes_wechat": false
+    },
+    "obsidian_dictation": {
+      "sample_count": 1,
+      "provenance": "owner_spoken_content_transcribed_automatically",
+      "used_for": ["spoken_narrative_context_only"],
+      "excluded_from": ["written_style_rules", "punctuation_counts", "phrase_frequencies"]
+    }
+  },
+  "status_definitions": {
+    "user_confirmed": "Explicit current owner instruction, scoped to its conditions.",
+    "observed": "Reproducible property of this corpus, not necessarily a universal preference.",
+    "hypothesis": "Interpretation of sampled messages; owner calibration remains necessary.",
+    "provisional_adaptation": "Suggested transfer to a medium without sufficient verified original samples."
+  },
+  "rules": [
+    {
+      "id": "instruction.direct_sentence",
+      "status": "user_confirmed",
+      "contexts": [
+        "all_chinese"
+      ],
+      "rule": "中文中非必要避免使用‘不是……而是……’及类似对比句式。允许正常否定、必要区分和纠错。",
+      "evidence": [
+        "Current user-provided AGENTS.md instructions"
+      ]
+    },
+    {
+      "id": "instruction.priority_tact_nonrepetition",
+      "status": "user_confirmed",
+      "contexts": ["voice_matching", "chat", "article", "formal"],
+      "rule": "先说重点，已经说过的内容不重复；措辞可以委婉、留转圜，也可以绕一点说，但保留重点。",
+      "evidence": ["Direct owner instruction in the current conversation"]
+    },
+    {
+      "id": "instruction.multiple_contexts",
+      "status": "user_confirmed",
+      "contexts": [
+        "chat",
+        "article",
+        "formal"
+      ],
+      "rule": "目标覆盖聊天、文章和正式内容；不同场合分别调整表达方式。",
+      "evidence": [
+        "Current conversation: user explicitly named chat, articles and formal content"
+      ]
+    },
+    {
+      "id": "observed.short_messages",
+      "status": "observed",
+      "contexts": [
+        "chat"
+      ],
+      "rule": "本批候选聊天以短消息为主。6 字符中位数是描述，不是输出字数目标。",
+      "evidence": [
+        "candidate_spontaneous_messages.median_characters",
+        "candidate_spontaneous_messages.length_buckets"
+      ],
+      "confidence": "high_within_this_corpus"
+    },
+    {
+      "id": "observed.incremental_delivery",
+      "status": "observed",
+      "contexts": [
+        "chat"
+      ],
+      "rule": "部分解释通过连续消息补充；单条与连续多条都存在，不强制拆消息。",
+      "evidence": [
+        "turns.count",
+        "turns.multi_message_turns",
+        "turns.messages_in_multi_message_turns"
+      ],
+      "confidence": "high_for_the_documented_turn_heuristic"
+    },
+    {
+      "id": "hypothesis.context_first",
+      "status": "hypothesis",
+      "contexts": [
+        "chat"
+      ],
+      "rule": "上下文已经明确时，直接接当前问题，再补必要信息；初次联系仍要给背景。",
+      "evidence": [
+        "safe_common_short_replies",
+        "predefined_expression_counts.就是",
+        "Local stratified qualitative review"
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "id": "hypothesis.specific_question",
+      "status": "hypothesis",
+      "contexts": [
+        "chat",
+        "explanation"
+      ],
+      "rule": "围绕材料中的具体疑点、条件或步骤追问，遇到分歧时重申讨论前提。",
+      "evidence": [
+        "predefined_expression_counts.啥",
+        "predefined_expression_counts.怎么",
+        "predefined_expression_counts.是不是",
+        "Local stratified qualitative review"
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "id": "hypothesis.reason_then_action",
+      "status": "hypothesis",
+      "contexts": [
+        "chat",
+        "explanation"
+      ],
+      "rule": "解释可补具体原因、限制与下一步；信息顺序由当前问题决定。校准中也有先报时间或先报选择的例子，不固定先原因后行动。",
+      "evidence": [
+        "predefined_expression_counts.因为",
+        "predefined_expression_counts.所以",
+        "predefined_expression_counts.先",
+        "predefined_expression_counts.直接",
+        "Local multi-message turn review",
+        "calibration/round-1.json"
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "id": "observed.contextual_colloquial_words",
+      "status": "observed",
+      "contexts": [
+        "chat"
+      ],
+      "rule": "‘啥、咋、就是、然后’有跨会话分布，按场景少量使用；不能堆成固定口头禅。",
+      "evidence": [
+        "predefined_expression_counts"
+      ],
+      "confidence": "high_for_counts_only"
+    },
+    {
+      "id": "hypothesis.qualified_judgment",
+      "status": "hypothesis",
+      "contexts": [
+        "all"
+      ],
+      "rule": "保留当前输入中的不确定程度；已确认的事情直接说，未确认判断可使用适量限定。不要自动增加‘我觉得’。",
+      "evidence": [
+        "predefined_expression_counts.感觉",
+        "predefined_expression_counts.应该",
+        "predefined_expression_counts.可能",
+        "predefined_expression_counts.我觉得",
+        "Local stratified qualitative review"
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "id": "observed.chat_punctuation",
+      "status": "observed",
+      "contexts": [
+        "chat"
+      ],
+      "rule": "多数候选聊天没有预设终止标点；这不构成删除正式文体标点的理由。",
+      "evidence": [
+        "candidate_spontaneous_messages.no_terminal_punctuation"
+      ],
+      "confidence": "high_for_the_documented_punctuation_heuristic"
+    },
+    {
+      "id": "adaptation.article",
+      "status": "provisional_adaptation",
+      "contexts": [
+        "article"
+      ],
+      "rule": "短段落可以先说用途或选择，也可以直接讲使用体验；允许口语化承接、自然跳转和松一些的标点节奏，不要把信息自动修成严密完整的论证。完整文章结构仍待原创样本校准。",
+      "evidence": [
+        "scenarios/article.md",
+        "calibration.tool_intro",
+        "calibration.article_choice",
+        "calibration.article_choice_expanded",
+        "calibration.article_experience",
+        "calibration.article_usage_unmeasured"
+      ],
+      "confidence": "five_nonblind_synthetic_short_paragraph_preferences_only"
+    },
+    {
+      "id": "adaptation.formal",
+      "status": "provisional_adaptation",
+      "contexts": [
+        "formal"
+      ],
+      "rule": "参考办事短消息的直接和具体，按用途补齐称呼、背景、请求与时间条件；长正式文档尚未校准。",
+      "evidence": [
+        "predefined_expression_counts.老师",
+        "Local practical-message review",
+        "scenarios/formal.md",
+        "calibration.formal_email_partial_material",
+        "calibration.formal_project_choice"
+      ],
+      "confidence": "short_synthetic_messages_and_one_familiar_teacher_email_long_documents_unverified"
+    },
+    {
+      "id": "instruction.calibration_dialog",
+      "status": "user_confirmed",
+      "contexts": [
+        "calibration_interaction"
+      ],
+      "rule": "校准时用宿主的选项对话框给几种说法，让本人选择；允许自由改写，正文不重复整组选项。",
+      "evidence": [
+        "calibration/round-1.json:interaction_preference"
+      ]
+    },
+    {
+      "id": "instruction.natural_punctuation_and_flow",
+      "status": "user_confirmed",
+      "contexts": [
+        "voice_matching"
+      ],
+      "rule": "模仿本人时不要把话整理成过于规整的逻辑链，也不要统一修成标准标点。可依语气使用括号、空格、逗号和空格强调词；保留自然变化。‘所以’‘然后’可以自然出现，但不要套固定的 AI 式承接模板。",
+      "evidence": [
+        "calibration/round-3.json:owner_confirmed_correction"
+      ]
+    },
+    {
+      "id": "instruction.case_specific_message_splitting",
+      "status": "user_confirmed",
+      "contexts": [
+        "formal_short_message"
+      ],
+      "rule": "在询问合作方报名表地址栏的这个情境里，本人会拆成几条短消息：先打招呼，再问具体怎么填，最后补今天要交并请对方看一下。只在本例确认这种分条方式，不推导为正式内容都要拆分。",
+      "evidence": [
+        "calibration/round-4.json:owner_confirmed_delivery_preference"
+      ]
+    },
+    {
+      "id": "hypothesis.current_answer_priority",
+      "status": "hypothesis",
+      "contexts": [
+        "chat",
+        "article_short",
+        "formal_short"
+      ],
+      "rule": "按当前要回应的事情安排信息，不固定先后顺序；模仿本人时避免自动补成层层递进的论证，承接词和补充信息顺着当时表达自然出现。",
+      "evidence": [
+        "calibration.repeat_advice",
+        "calibration.teacher_check",
+        "calibration.video_delivery",
+        "calibration.tool_intro",
+        "calibration.simple_choice",
+        "calibration.attachment_request",
+        "calibration.article_choice",
+        "calibration.chat_uncertain_invitation",
+        "calibration.article_usage_unmeasured",
+        "calibration.chat_invitation_details",
+        "calibration.chat_partial_notes",
+        "calibration.chat_file_not_yet_seen",
+        "calibration.chat_design_feedback",
+        "calibration.chat_movie_invitation_reluctance"
+      ],
+      "confidence": "nineteen_synthetic_cases_with_context_scoped_preferences"
+    },
+    {
+      "id": "hypothesis.direct_and_contextual_politeness",
+      "status": "hypothesis",
+      "contexts": [
+        "formal_short"
+      ],
+      "rule": "办事短消息可直接进入事项；称呼、问候与请求的柔和程度依对象选择。当前例子包括熟悉老师的直接请求和合作方的‘方便……吗’问句。",
+      "evidence": [
+        "calibration.teacher_check",
+        "calibration.attachment_request"
+      ],
+      "confidence": "three_synthetic_preferences_and_one_owner_written_email_example"
+    },
+    {
+      "id": "hypothesis.familiar_peer_feedback",
+      "status": "hypothesis",
+      "contexts": [
+        "chat_feedback"
+      ],
+      "rule": "给熟悉同学提具体修改意见时，可以先肯定整体，再用‘可能’缓和指出一处并直接说怎么调整，最后补充其他部分没问题。",
+      "evidence": [
+        "calibration/round-12.json"
+      ],
+      "confidence": "one_owner_written_synthetic_reply"
+    },
+    {
+      "id": "hypothesis.short_acknowledgment_variants",
+      "status": "hypothesis",
+      "contexts": [
+        "chat_design_feedback_acknowledgment"
+      ],
+      "rule": "熟悉同学改完设计图、本人觉得可以用时，可用很短的肯定回应。本人给出多种未排序写法，按情境选一种，不要叠加，也不推广到其他对象。",
+      "evidence": [
+        "calibration/round-14.json"
+      ],
+      "confidence": "one_owner_provided_variant_set"
+    },
+    {
+      "id": "hypothesis.obsidian_english_personal_narrative",
+      "status": "hypothesis",
+      "contexts": ["english_personal_narrative_essay"],
+      "rule": "一份本人提供的英文个人叙事稿以具体场景开篇，用实际尝试与结果推进，反思贴着经历，结尾回扣开头。稿件编辑来源未逐句确认，只作低置信度、限文体参考。",
+      "evidence": ["evidence/obsidian-writing.md"],
+      "confidence": "one_owner_provided_manuscript_with_unknown_sentence_level_editing"
+    },
+    {
+      "id": "hypothesis.familiar_peer_timing_reply",
+      "status": "hypothesis",
+      "contexts": ["chat_familiar_peer_acceptance"],
+      "rule": "在熟人请看材料、本人计划稍后处理的本例中，先简短接住请求，再说明具体查看时间。",
+      "evidence": ["calibration/round-15.json"],
+      "confidence": "one_owner_selected_synthetic_option"
+    }
+  ],
+  "application_constraints": [
+    "Current task facts, audience and intent take priority.",
+    "Do not invent the owner's facts, attitudes, emotions, experiences or promises.",
+    "Do not deliberately reproduce typos, profanity, private nicknames or every colloquial marker.",
+    "Do not infer sensitive traits or relationships from message topics.",
+    "Keep explanations complete when needed.",
+    "Generated calibration examples are synthetic, not owner-authored evidence."
+  ],
+  "coverage": {
+    "chat": "substantial_observation_not_owner_validated",
+    "article": "five_short_synthetic_preferences_insufficient_for_long_form",
+    "formal_short_message": "two_synthetic_choices_plus_two_synthetic_rewrites_long_documents_unverified",
+    "formal_email": "one_synthetic_short_email_to_familiar_teacher_long_email_structure_unverified",
+    "formal_project_note": "one_synthetic_short_project_note_preference_full_project_documents_unverified",
+    "formal_long_document": "insufficient_verified_original_samples",
+    "english_long_form": "not_calibrated"
+  },
+  "calibration": {
+    "rounds": 15,
+    "case_count": 21,
+    "owner_written_replies": 10,
+    "owner_written_variant_sets": 1,
+    "owner_selected_options": 10,
+    "blind_evaluation": false,
+    "record": "calibration/round-1.json; calibration/round-2.json; calibration/round-3.json; calibration/round-4.json; calibration/round-5.json; calibration/round-6.json; calibration/round-7.json; calibration/round-8.json; calibration/round-9.json; calibration/round-10.json; calibration/round-11.json; calibration/round-12.json; calibration/round-13.json; calibration/round-14.json; calibration/round-15.json",
+    "generalization": "case-scoped preferences confirmed; cross-case synthesis remains hypothetical"
+  }
+}

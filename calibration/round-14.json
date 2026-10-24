@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "round": 14,
+  "status": "completed",
+  "blind_evaluation": false,
+  "source": "Direct owner-provided variants in the current conversation; the situation was hypothetical.",
+  "scope_note": "This round records a set of interchangeable short affirmations for the same familiar-peer context, without ranking them.",
+  "cases": [
+    {
+      "id": "calibration.chat_design_feedback_ack_variants",
+      "mode": "chat",
+      "evidence_kind": "owner_written_synthetic_variants",
+      "scenario": "熟悉同学调整了设计图，本人觉得现在可以直接用。",
+      "preferred_variants": [
+        "行",
+        "彳亍",
+        "可",
+        "可以啊",
+        "可以呀",
+        "okk",
+        "okok",
+        "ok",
+        "ok的",
+        "可以可以"
+      ],
+      "ordering": "unordered",
+      "case_observation": "本人给出多种很短的肯定回应，包含单字、语气词、拼音和重复形式；没有指定首选。",
+      "generalization_limit": "只记录这些写法可用于本次熟人设计图场景，不推导为所有肯定回复都可互换，也不把多种写法拼在一起。"
+    }
+  ],
+  "interpretation_constraints": [
+    "These are owner-provided alternatives for one hypothetical context, not ranked choices or historical chat excerpts.",
+    "Do not combine the variants into one response or mechanically reuse them elsewhere."
+  ]
+}

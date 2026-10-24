@@ -1,0 +1,963 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "self_messages": 9661,
+    "eligible_messages": 9514,
+    "eligible_chats": 81,
+    "eligible_characters": 82529,
+    "excluded_messages": 147,
+    "self_jsonl_sha256": "4b4712315467c006c7f14f8911dbca2374b7331e3e1f457adebf36c481350cf5",
+    "first_message": "2026-02-06T16:10:59+08:00",
+    "last_message": "2026-10-24T19:00:43+08:00"
+  },
+  "punctuation": {
+    "definition": "Occurrences count every matching glyph; message_share is the fraction of eligible messages containing at least one glyph in the category. Categories can overlap.",
+    "categories": {
+      "comma": {
+        "messages": 1051,
+        "message_share": 0.110469,
+        "messages_per_1000": 110.469,
+        "occurrences": 1574,
+        "occurrences_per_1000_messages": 165.44,
+        "occurrences_per_1000_characters": 19.072,
+        "chats": 55,
+        "glyphs": {
+          "，": 1525,
+          ",": 49
+        }
+      },
+      "full_stop": {
+        "messages": 318,
+        "message_share": 0.033424,
+        "messages_per_1000": 33.424,
+        "occurrences": 474,
+        "occurrences_per_1000_messages": 49.821,
+        "occurrences_per_1000_characters": 5.743,
+        "chats": 41,
+        "glyphs": {
+          "。": 281,
+          ".": 193
+        }
+      },
+      "question_mark": {
+        "messages": 846,
+        "message_share": 0.088922,
+        "messages_per_1000": 88.922,
+        "occurrences": 887,
+        "occurrences_per_1000_messages": 93.231,
+        "occurrences_per_1000_characters": 10.748,
+        "chats": 50,
+        "glyphs": {
+          "？": 839,
+          "?": 48
+        }
+      },
+      "exclamation_mark": {
+        "messages": 63,
+        "message_share": 0.006622,
+        "messages_per_1000": 6.622,
+        "occurrences": 102,
+        "occurrences_per_1000_messages": 10.721,
+        "occurrences_per_1000_characters": 1.236,
+        "chats": 18,
+        "glyphs": {
+          "！": 93,
+          "!": 9
+        }
+      },
+      "enumeration_comma": {
+        "messages": 32,
+        "message_share": 0.003363,
+        "messages_per_1000": 3.363,
+        "occurrences": 57,
+        "occurrences_per_1000_messages": 5.991,
+        "occurrences_per_1000_characters": 0.691,
+        "chats": 16,
+        "glyphs": {
+          "、": 57
+        }
+      },
+      "semicolon": {
+        "messages": 10,
+        "message_share": 0.001051,
+        "messages_per_1000": 1.051,
+        "occurrences": 12,
+        "occurrences_per_1000_messages": 1.261,
+        "occurrences_per_1000_characters": 0.145,
+        "chats": 7,
+        "glyphs": {
+          "；": 8,
+          ";": 4
+        }
+      },
+      "colon": {
+        "messages": 122,
+        "message_share": 0.012823,
+        "messages_per_1000": 12.823,
+        "occurrences": 148,
+        "occurrences_per_1000_messages": 15.556,
+        "occurrences_per_1000_characters": 1.793,
+        "chats": 24,
+        "glyphs": {
+          "：": 41,
+          ":": 107
+        }
+      },
+      "ellipsis_mark": {
+        "messages": 5,
+        "message_share": 0.000526,
+        "messages_per_1000": 0.526,
+        "occurrences": 7,
+        "occurrences_per_1000_messages": 0.736,
+        "occurrences_per_1000_characters": 0.085,
+        "chats": 2,
+        "glyphs": {
+          "…": 7
+        }
+      },
+      "dash": {
+        "messages": 4,
+        "message_share": 0.00042,
+        "messages_per_1000": 0.42,
+        "occurrences": 5,
+        "occurrences_per_1000_messages": 0.526,
+        "occurrences_per_1000_characters": 0.061,
+        "chats": 2,
+        "glyphs": {
+          "—": 3,
+          "–": 2,
+          "－": 0
+        }
+      },
+      "hyphen": {
+        "messages": 72,
+        "message_share": 0.007568,
+        "messages_per_1000": 7.568,
+        "occurrences": 109,
+        "occurrences_per_1000_messages": 11.457,
+        "occurrences_per_1000_characters": 1.321,
+        "chats": 18,
+        "glyphs": {
+          "-": 109
+        }
+      },
+      "parentheses": {
+        "messages": 83,
+        "message_share": 0.008724,
+        "messages_per_1000": 8.724,
+        "occurrences": 162,
+        "occurrences_per_1000_messages": 17.028,
+        "occurrences_per_1000_characters": 1.963,
+        "chats": 20,
+        "glyphs": {
+          "（": 66,
+          "）": 49,
+          "(": 23,
+          ")": 24
+        }
+      },
+      "quotation_marks": {
+        "messages": 40,
+        "message_share": 0.004204,
+        "messages_per_1000": 4.204,
+        "occurrences": 72,
+        "occurrences_per_1000_messages": 7.568,
+        "occurrences_per_1000_characters": 0.872,
+        "chats": 20,
+        "glyphs": {
+          "“": 21,
+          "”": 21,
+          "‘": 3,
+          "’": 4,
+          "「": 3,
+          "」": 3,
+          "『": 0,
+          "』": 0,
+          "\"": 6,
+          "'": 11
+        }
+      },
+      "brackets": {
+        "messages": 169,
+        "message_share": 0.017763,
+        "messages_per_1000": 17.763,
+        "occurrences": 405,
+        "occurrences_per_1000_messages": 42.569,
+        "occurrences_per_1000_characters": 4.907,
+        "chats": 38,
+        "glyphs": {
+          "【": 2,
+          "】": 3,
+          "[": 189,
+          "]": 189,
+          "《": 1,
+          "》": 5,
+          "<": 10,
+          ">": 6
+        }
+      },
+      "slash": {
+        "messages": 40,
+        "message_share": 0.004204,
+        "messages_per_1000": 4.204,
+        "occurrences": 106,
+        "occurrences_per_1000_messages": 11.141,
+        "occurrences_per_1000_characters": 1.284,
+        "chats": 16,
+        "glyphs": {
+          "/": 106,
+          "／": 0
+        }
+      }
+    },
+    "terminal_style": {
+      "colon": {
+        "messages": 5,
+        "share": 0.000526
+      },
+      "comma": {
+        "messages": 17,
+        "share": 0.001787
+      },
+      "ellipsis_mark": {
+        "messages": 1,
+        "share": 0.000105
+      },
+      "exclamation_mark": {
+        "messages": 54,
+        "share": 0.005676
+      },
+      "full_stop": {
+        "messages": 143,
+        "share": 0.01503
+      },
+      "none_or_other": {
+        "messages": 8584,
+        "share": 0.902249
+      },
+      "question_mark": {
+        "messages": 709,
+        "share": 0.074522
+      },
+      "semicolon": {
+        "messages": 1,
+        "share": 0.000105
+      }
+    }
+  },
+  "expression_candidates": {
+    "definition": "Predefined substring counts, not automatic proof of filler-word or catchphrase status. Phrases overlap; each message may count in multiple entries.",
+    "groups": {
+      "discourse_connectors": {
+        "然后": {
+          "messages": 142,
+          "message_share": 0.014925,
+          "messages_per_1000": 14.925,
+          "occurrences": 152,
+          "occurrences_per_1000_messages": 15.976,
+          "occurrences_per_1000_characters": 1.842,
+          "chats": 25
+        },
+        "就是": {
+          "messages": 185,
+          "message_share": 0.019445,
+          "messages_per_1000": 19.445,
+          "occurrences": 195,
+          "occurrences_per_1000_messages": 20.496,
+          "occurrences_per_1000_characters": 2.363,
+          "chats": 34
+        },
+        "主要": {
+          "messages": 18,
+          "message_share": 0.001892,
+          "messages_per_1000": 1.892,
+          "occurrences": 19,
+          "occurrences_per_1000_messages": 1.997,
+          "occurrences_per_1000_characters": 0.23,
+          "chats": 11
+        },
+        "其实": {
+          "messages": 29,
+          "message_share": 0.003048,
+          "messages_per_1000": 3.048,
+          "occurrences": 29,
+          "occurrences_per_1000_messages": 3.048,
+          "occurrences_per_1000_characters": 0.351,
+          "chats": 15
+        },
+        "因为": {
+          "messages": 75,
+          "message_share": 0.007883,
+          "messages_per_1000": 7.883,
+          "occurrences": 75,
+          "occurrences_per_1000_messages": 7.883,
+          "occurrences_per_1000_characters": 0.909,
+          "chats": 23
+        },
+        "所以": {
+          "messages": 77,
+          "message_share": 0.008093,
+          "messages_per_1000": 8.093,
+          "occurrences": 79,
+          "occurrences_per_1000_messages": 8.304,
+          "occurrences_per_1000_characters": 0.957,
+          "chats": 17
+        },
+        "但是": {
+          "messages": 57,
+          "message_share": 0.005991,
+          "messages_per_1000": 5.991,
+          "occurrences": 61,
+          "occurrences_per_1000_messages": 6.412,
+          "occurrences_per_1000_characters": 0.739,
+          "chats": 19
+        },
+        "不过": {
+          "messages": 15,
+          "message_share": 0.001577,
+          "messages_per_1000": 1.577,
+          "occurrences": 15,
+          "occurrences_per_1000_messages": 1.577,
+          "occurrences_per_1000_characters": 0.182,
+          "chats": 7
+        },
+        "先": {
+          "messages": 143,
+          "message_share": 0.01503,
+          "messages_per_1000": 15.03,
+          "occurrences": 148,
+          "occurrences_per_1000_messages": 15.556,
+          "occurrences_per_1000_characters": 1.793,
+          "chats": 29
+        },
+        "再": {
+          "messages": 100,
+          "message_share": 0.010511,
+          "messages_per_1000": 10.511,
+          "occurrences": 104,
+          "occurrences_per_1000_messages": 10.931,
+          "occurrences_per_1000_characters": 1.26,
+          "chats": 26
+        },
+        "直接": {
+          "messages": 114,
+          "message_share": 0.011982,
+          "messages_per_1000": 11.982,
+          "occurrences": 121,
+          "occurrences_per_1000_messages": 12.718,
+          "occurrences_per_1000_characters": 1.466,
+          "chats": 22
+        },
+        "比如": {
+          "messages": 9,
+          "message_share": 0.000946,
+          "messages_per_1000": 0.946,
+          "occurrences": 9,
+          "occurrences_per_1000_messages": 0.946,
+          "occurrences_per_1000_characters": 0.109,
+          "chats": 6
+        },
+        "如果": {
+          "messages": 21,
+          "message_share": 0.002207,
+          "messages_per_1000": 2.207,
+          "occurrences": 22,
+          "occurrences_per_1000_messages": 2.312,
+          "occurrences_per_1000_characters": 0.267,
+          "chats": 11
+        }
+      },
+      "stance_and_uncertainty": {
+        "我觉得": {
+          "messages": 2,
+          "message_share": 0.00021,
+          "messages_per_1000": 0.21,
+          "occurrences": 2,
+          "occurrences_per_1000_messages": 0.21,
+          "occurrences_per_1000_characters": 0.024,
+          "chats": 1
+        },
+        "我感觉": {
+          "messages": 3,
+          "message_share": 0.000315,
+          "messages_per_1000": 0.315,
+          "occurrences": 3,
+          "occurrences_per_1000_messages": 0.315,
+          "occurrences_per_1000_characters": 0.036,
+          "chats": 3
+        },
+        "感觉": {
+          "messages": 72,
+          "message_share": 0.007568,
+          "messages_per_1000": 7.568,
+          "occurrences": 80,
+          "occurrences_per_1000_messages": 8.409,
+          "occurrences_per_1000_characters": 0.969,
+          "chats": 20
+        },
+        "应该": {
+          "messages": 58,
+          "message_share": 0.006096,
+          "messages_per_1000": 6.096,
+          "occurrences": 58,
+          "occurrences_per_1000_messages": 6.096,
+          "occurrences_per_1000_characters": 0.703,
+          "chats": 23
+        },
+        "可能": {
+          "messages": 51,
+          "message_share": 0.005361,
+          "messages_per_1000": 5.361,
+          "occurrences": 51,
+          "occurrences_per_1000_messages": 5.361,
+          "occurrences_per_1000_characters": 0.618,
+          "chats": 20
+        },
+        "好像": {
+          "messages": 34,
+          "message_share": 0.003574,
+          "messages_per_1000": 3.574,
+          "occurrences": 34,
+          "occurrences_per_1000_messages": 3.574,
+          "occurrences_per_1000_characters": 0.412,
+          "chats": 12
+        },
+        "不一定": {
+          "messages": 3,
+          "message_share": 0.000315,
+          "messages_per_1000": 0.315,
+          "occurrences": 3,
+          "occurrences_per_1000_messages": 0.315,
+          "occurrences_per_1000_characters": 0.036,
+          "chats": 3
+        },
+        "我认为": {
+          "messages": 2,
+          "message_share": 0.00021,
+          "messages_per_1000": 0.21,
+          "occurrences": 2,
+          "occurrences_per_1000_messages": 0.21,
+          "occurrences_per_1000_characters": 0.024,
+          "chats": 2
+        }
+      },
+      "particles_and_interjections": {
+        "啊": {
+          "messages": 331,
+          "message_share": 0.034791,
+          "messages_per_1000": 34.791,
+          "occurrences": 344,
+          "occurrences_per_1000_messages": 36.157,
+          "occurrences_per_1000_characters": 4.168,
+          "chats": 37
+        },
+        "吧": {
+          "messages": 372,
+          "message_share": 0.0391,
+          "messages_per_1000": 39.1,
+          "occurrences": 373,
+          "occurrences_per_1000_messages": 39.205,
+          "occurrences_per_1000_characters": 4.52,
+          "chats": 36
+        },
+        "呢": {
+          "messages": 77,
+          "message_share": 0.008093,
+          "messages_per_1000": 8.093,
+          "occurrences": 77,
+          "occurrences_per_1000_messages": 8.093,
+          "occurrences_per_1000_characters": 0.933,
+          "chats": 19
+        },
+        "嘛": {
+          "messages": 33,
+          "message_share": 0.003469,
+          "messages_per_1000": 3.469,
+          "occurrences": 35,
+          "occurrences_per_1000_messages": 3.679,
+          "occurrences_per_1000_characters": 0.424,
+          "chats": 14
+        },
+        "呗": {
+          "messages": 97,
+          "message_share": 0.010196,
+          "messages_per_1000": 10.196,
+          "occurrences": 97,
+          "occurrences_per_1000_messages": 10.196,
+          "occurrences_per_1000_characters": 1.175,
+          "chats": 20
+        },
+        "呀": {
+          "messages": 45,
+          "message_share": 0.00473,
+          "messages_per_1000": 4.73,
+          "occurrences": 45,
+          "occurrences_per_1000_messages": 4.73,
+          "occurrences_per_1000_characters": 0.545,
+          "chats": 15
+        },
+        "哦": {
+          "messages": 364,
+          "message_share": 0.038259,
+          "messages_per_1000": 38.259,
+          "occurrences": 377,
+          "occurrences_per_1000_messages": 39.626,
+          "occurrences_per_1000_characters": 4.568,
+          "chats": 30
+        },
+        "噢": {
+          "messages": 0,
+          "message_share": 0.0,
+          "messages_per_1000": 0.0,
+          "occurrences": 0,
+          "occurrences_per_1000_messages": 0.0,
+          "occurrences_per_1000_characters": 0.0,
+          "chats": 0
+        },
+        "嗯": {
+          "messages": 30,
+          "message_share": 0.003153,
+          "messages_per_1000": 3.153,
+          "occurrences": 32,
+          "occurrences_per_1000_messages": 3.363,
+          "occurrences_per_1000_characters": 0.388,
+          "chats": 11
+        },
+        "诶": {
+          "messages": 42,
+          "message_share": 0.004415,
+          "messages_per_1000": 4.415,
+          "occurrences": 42,
+          "occurrences_per_1000_messages": 4.415,
+          "occurrences_per_1000_characters": 0.509,
+          "chats": 12
+        },
+        "欸": {
+          "messages": 0,
+          "message_share": 0.0,
+          "messages_per_1000": 0.0,
+          "occurrences": 0,
+          "occurrences_per_1000_messages": 0.0,
+          "occurrences_per_1000_characters": 0.0,
+          "chats": 0
+        }
+      },
+      "colloquial_questions": {
+        "啥": {
+          "messages": 536,
+          "message_share": 0.056338,
+          "messages_per_1000": 56.338,
+          "occurrences": 544,
+          "occurrences_per_1000_messages": 57.179,
+          "occurrences_per_1000_characters": 6.592,
+          "chats": 39
+        },
+        "咋": {
+          "messages": 181,
+          "message_share": 0.019025,
+          "messages_per_1000": 19.025,
+          "occurrences": 181,
+          "occurrences_per_1000_messages": 19.025,
+          "occurrences_per_1000_characters": 2.193,
+          "chats": 21
+        },
+        "为啥": {
+          "messages": 94,
+          "message_share": 0.00988,
+          "messages_per_1000": 9.88,
+          "occurrences": 94,
+          "occurrences_per_1000_messages": 9.88,
+          "occurrences_per_1000_characters": 1.139,
+          "chats": 15
+        },
+        "怎么": {
+          "messages": 108,
+          "message_share": 0.011352,
+          "messages_per_1000": 11.352,
+          "occurrences": 108,
+          "occurrences_per_1000_messages": 11.352,
+          "occurrences_per_1000_characters": 1.309,
+          "chats": 26
+        },
+        "为什么": {
+          "messages": 27,
+          "message_share": 0.002838,
+          "messages_per_1000": 2.838,
+          "occurrences": 27,
+          "occurrences_per_1000_messages": 2.838,
+          "occurrences_per_1000_characters": 0.327,
+          "chats": 7
+        },
+        "是不是": {
+          "messages": 32,
+          "message_share": 0.003363,
+          "messages_per_1000": 3.363,
+          "occurrences": 33,
+          "occurrences_per_1000_messages": 3.469,
+          "occurrences_per_1000_characters": 0.4,
+          "chats": 15
+        },
+        "有没有": {
+          "messages": 34,
+          "message_share": 0.003574,
+          "messages_per_1000": 3.574,
+          "occurrences": 35,
+          "occurrences_per_1000_messages": 3.679,
+          "occurrences_per_1000_characters": 0.424,
+          "chats": 18
+        },
+        "能不能": {
+          "messages": 14,
+          "message_share": 0.001472,
+          "messages_per_1000": 1.472,
+          "occurrences": 14,
+          "occurrences_per_1000_messages": 1.472,
+          "occurrences_per_1000_characters": 0.17,
+          "chats": 9
+        },
+        "可以吗": {
+          "messages": 3,
+          "message_share": 0.000315,
+          "messages_per_1000": 0.315,
+          "occurrences": 3,
+          "occurrences_per_1000_messages": 0.315,
+          "occurrences_per_1000_characters": 0.036,
+          "chats": 3
+        }
+      },
+      "requests_and_politeness": {
+        "麻烦": {
+          "messages": 7,
+          "message_share": 0.000736,
+          "messages_per_1000": 0.736,
+          "occurrences": 7,
+          "occurrences_per_1000_messages": 0.736,
+          "occurrences_per_1000_characters": 0.085,
+          "chats": 5
+        },
+        "方便": {
+          "messages": 10,
+          "message_share": 0.001051,
+          "messages_per_1000": 1.051,
+          "occurrences": 10,
+          "occurrences_per_1000_messages": 1.051,
+          "occurrences_per_1000_characters": 0.121,
+          "chats": 6
+        },
+        "请问": {
+          "messages": 0,
+          "message_share": 0.0,
+          "messages_per_1000": 0.0,
+          "occurrences": 0,
+          "occurrences_per_1000_messages": 0.0,
+          "occurrences_per_1000_characters": 0.0,
+          "chats": 0
+        },
+        "帮我": {
+          "messages": 28,
+          "message_share": 0.002943,
+          "messages_per_1000": 2.943,
+          "occurrences": 28,
+          "occurrences_per_1000_messages": 2.943,
+          "occurrences_per_1000_characters": 0.339,
+          "chats": 14
+        },
+        "谢谢": {
+          "messages": 27,
+          "message_share": 0.002838,
+          "messages_per_1000": 2.838,
+          "occurrences": 27,
+          "occurrences_per_1000_messages": 2.838,
+          "occurrences_per_1000_characters": 0.327,
+          "chats": 14
+        },
+        "你好": {
+          "messages": 43,
+          "message_share": 0.00452,
+          "messages_per_1000": 4.52,
+          "occurrences": 44,
+          "occurrences_per_1000_messages": 4.625,
+          "occurrences_per_1000_characters": 0.533,
+          "chats": 10
+        },
+        "您好": {
+          "messages": 0,
+          "message_share": 0.0,
+          "messages_per_1000": 0.0,
+          "occurrences": 0,
+          "occurrences_per_1000_messages": 0.0,
+          "occurrences_per_1000_characters": 0.0,
+          "chats": 0
+        },
+        "老师": {
+          "messages": 151,
+          "message_share": 0.015871,
+          "messages_per_1000": 15.871,
+          "occurrences": 157,
+          "occurrences_per_1000_messages": 16.502,
+          "occurrences_per_1000_characters": 1.902,
+          "chats": 24
+        }
+      },
+      "short_reply_and_laughter": {
+        "好": {
+          "messages": 840,
+          "message_share": 0.088291,
+          "messages_per_1000": 88.291,
+          "occurrences": 879,
+          "occurrences_per_1000_messages": 92.39,
+          "occurrences_per_1000_characters": 10.651,
+          "chats": 54
+        },
+        "好的": {
+          "messages": 97,
+          "message_share": 0.010196,
+          "messages_per_1000": 10.196,
+          "occurrences": 99,
+          "occurrences_per_1000_messages": 10.406,
+          "occurrences_per_1000_characters": 1.2,
+          "chats": 17
+        },
+        "行": {
+          "messages": 203,
+          "message_share": 0.021337,
+          "messages_per_1000": 21.337,
+          "occurrences": 210,
+          "occurrences_per_1000_messages": 22.073,
+          "occurrences_per_1000_characters": 2.545,
+          "chats": 28
+        },
+        "可以": {
+          "messages": 328,
+          "message_share": 0.034476,
+          "messages_per_1000": 34.476,
+          "occurrences": 366,
+          "occurrences_per_1000_messages": 38.47,
+          "occurrences_per_1000_characters": 4.435,
+          "chats": 32
+        },
+        "没事": {
+          "messages": 58,
+          "message_share": 0.006096,
+          "messages_per_1000": 6.096,
+          "occurrences": 59,
+          "occurrences_per_1000_messages": 6.201,
+          "occurrences_per_1000_characters": 0.715,
+          "chats": 19
+        },
+        "收到": {
+          "messages": 9,
+          "message_share": 0.000946,
+          "messages_per_1000": 0.946,
+          "occurrences": 9,
+          "occurrences_per_1000_messages": 0.946,
+          "occurrences_per_1000_characters": 0.109,
+          "chats": 6
+        },
+        "哈哈": {
+          "messages": 28,
+          "message_share": 0.002943,
+          "messages_per_1000": 2.943,
+          "occurrences": 34,
+          "occurrences_per_1000_messages": 3.574,
+          "occurrences_per_1000_characters": 0.412,
+          "chats": 7
+        },
+        "哈哈哈": {
+          "messages": 12,
+          "message_share": 0.001261,
+          "messages_per_1000": 1.261,
+          "occurrences": 12,
+          "occurrences_per_1000_messages": 1.261,
+          "occurrences_per_1000_characters": 0.145,
+          "chats": 3
+        },
+        "哈哈哈哈": {
+          "messages": 6,
+          "message_share": 0.000631,
+          "messages_per_1000": 0.631,
+          "occurrences": 6,
+          "occurrences_per_1000_messages": 0.631,
+          "occurrences_per_1000_characters": 0.073,
+          "chats": 3
+        }
+      },
+      "time_and_action": {
+        "等会": {
+          "messages": 51,
+          "message_share": 0.005361,
+          "messages_per_1000": 5.361,
+          "occurrences": 51,
+          "occurrences_per_1000_messages": 5.361,
+          "occurrences_per_1000_characters": 0.618,
+          "chats": 17
+        },
+        "等下": {
+          "messages": 1,
+          "message_share": 0.000105,
+          "messages_per_1000": 0.105,
+          "occurrences": 1,
+          "occurrences_per_1000_messages": 0.105,
+          "occurrences_per_1000_characters": 0.012,
+          "chats": 1
+        },
+        "晚点": {
+          "messages": 31,
+          "message_share": 0.003258,
+          "messages_per_1000": 3.258,
+          "occurrences": 32,
+          "occurrences_per_1000_messages": 3.363,
+          "occurrences_per_1000_characters": 0.388,
+          "chats": 15
+        },
+        "一下": {
+          "messages": 404,
+          "message_share": 0.042464,
+          "messages_per_1000": 42.464,
+          "occurrences": 419,
+          "occurrences_per_1000_messages": 44.04,
+          "occurrences_per_1000_characters": 5.077,
+          "chats": 40
+        },
+        "发一下": {
+          "messages": 6,
+          "message_share": 0.000631,
+          "messages_per_1000": 0.631,
+          "occurrences": 6,
+          "occurrences_per_1000_messages": 0.631,
+          "occurrences_per_1000_characters": 0.073,
+          "chats": 5
+        },
+        "我看看": {
+          "messages": 11,
+          "message_share": 0.001156,
+          "messages_per_1000": 1.156,
+          "occurrences": 11,
+          "occurrences_per_1000_messages": 1.156,
+          "occurrences_per_1000_characters": 0.133,
+          "chats": 6
+        },
+        "我试试": {
+          "messages": 1,
+          "message_share": 0.000105,
+          "messages_per_1000": 0.105,
+          "occurrences": 1,
+          "occurrences_per_1000_messages": 0.105,
+          "occurrences_per_1000_characters": 0.012,
+          "chats": 1
+        }
+      }
+    },
+    "exact_short_replies": {
+      "好": {
+        "messages": 141,
+        "message_share": 0.01482
+      },
+      "好的": {
+        "messages": 19,
+        "message_share": 0.001997
+      },
+      "好滴": {
+        "messages": 1,
+        "message_share": 0.000105
+      },
+      "嗯": {
+        "messages": 6,
+        "message_share": 0.000631
+      },
+      "嗯嗯": {
+        "messages": 1,
+        "message_share": 0.000105
+      },
+      "哦": {
+        "messages": 134,
+        "message_share": 0.014085
+      },
+      "哦哦": {
+        "messages": 5,
+        "message_share": 0.000526
+      },
+      "行": {
+        "messages": 23,
+        "message_share": 0.002417
+      },
+      "行吧": {
+        "messages": 1,
+        "message_share": 0.000105
+      },
+      "可以": {
+        "messages": 22,
+        "message_share": 0.002312
+      },
+      "可以的": {
+        "messages": 8,
+        "message_share": 0.000841
+      },
+      "可以啊": {
+        "messages": 23,
+        "message_share": 0.002417
+      },
+      "可以呀": {
+        "messages": 1,
+        "message_share": 0.000105
+      },
+      "对": {
+        "messages": 57,
+        "message_share": 0.005991
+      },
+      "对的": {
+        "messages": 7,
+        "message_share": 0.000736
+      },
+      "是的": {
+        "messages": 1,
+        "message_share": 0.000105
+      },
+      "没有": {
+        "messages": 8,
+        "message_share": 0.000841
+      },
+      "没事": {
+        "messages": 6,
+        "message_share": 0.000631
+      },
+      "谢谢": {
+        "messages": 5,
+        "message_share": 0.000526
+      },
+      "收到": {
+        "messages": 5,
+        "message_share": 0.000526
+      },
+      "哈哈": {
+        "messages": 12,
+        "message_share": 0.001261
+      },
+      "哈哈哈": {
+        "messages": 3,
+        "message_share": 0.000315
+      },
+      "OK": {
+        "messages": 2,
+        "message_share": 0.00021
+      },
+      "ok": {
+        "messages": 74,
+        "message_share": 0.007778
+      },
+      "okok": {
+        "messages": 9,
+        "message_share": 0.000946
+      }
+    }
+  },
+  "limitations": [
+    "Scope is the currently readable local WeChat export, not a complete lifetime corpus.",
+    "Eligible messages are heuristic candidates; sending direction does not establish original authorship.",
+    "Probabilities are empirical message shares within the eligible sample, not probabilities for every context.",
+    "Substrings may occur with different meanings; occurrence counts do not establish a catchphrase.",
+    "Contacts, chat IDs, raw excerpts and message-level results are not published."
+  ]
+}

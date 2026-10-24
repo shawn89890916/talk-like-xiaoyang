@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "self_messages": 9661,
+    "self_message_chats": 82,
+    "all_exported_messages": 22547,
+    "all_exported_chats": 93,
+    "first_self_message": "2026-02-06T16:10:59+08:00",
+    "last_self_message": "2026-10-24T19:00:43+08:00",
+    "self_jsonl_sha256": "4b4712315467c006c7f14f8911dbca2374b7331e3e1f457adebf36c481350cf5",
+    "full_jsonl_sha256": "a6d8fdc02f3888f6871019c1e7b970f15c34a579327cc149b98e9d974f786708"
+  },
+  "all_self_messages": {
+    "messages": 9661,
+    "characters": 104614,
+    "median_characters": 6,
+    "mean_characters": 10.828,
+    "p75_characters": 10,
+    "p90_characters": 18,
+    "p95_characters": 28,
+    "max_characters": 3054,
+    "length_buckets": {
+      "1-5": 4742,
+      "11-20": 1539,
+      "6-10": 2590,
+      "21-50": 578,
+      "101+": 69,
+      "51-100": 143
+    },
+    "no_terminal_punctuation": 8740,
+    "with_question_mark": 884,
+    "with_exclamation_mark": 73,
+    "with_full_stop": 222,
+    "with_newline": 81,
+    "with_wechat_emoticon": 153,
+    "with_unicode_emoji": 129
+  },
+  "candidate_spontaneous_messages": {
+    "messages": 9514,
+    "characters": 82529,
+    "median_characters": 6.0,
+    "mean_characters": 8.674,
+    "p75_characters": 10,
+    "p90_characters": 17,
+    "p95_characters": 24,
+    "max_characters": 224,
+    "length_buckets": {
+      "1-5": 4736,
+      "11-20": 1528,
+      "6-10": 2578,
+      "21-50": 532,
+      "101+": 32,
+      "51-100": 108
+    },
+    "no_terminal_punctuation": 8610,
+    "with_question_mark": 846,
+    "with_exclamation_mark": 63,
+    "with_full_stop": 207,
+    "with_newline": 52,
+    "with_wechat_emoticon": 151,
+    "with_unicode_emoji": 123
+  },
+  "excluded_candidate_messages": 147,
+  "exclusion_reason_counts": {
+    "formatted_authorship_uncertain": 23,
+    "numeric_identifier": 22,
+    "long_authorship_uncertain": 12,
+    "shared_or_system_template": 15,
+    "credential_like": 46,
+    "command": 4,
+    "link_only": 64,
+    "code_or_structured": 1
+  },
+  "monthly_message_counts": {
+    "2026-02": 577,
+    "2026-03": 367,
+    "2026-04": 140,
+    "2026-05": 1051,
+    "2026-06": 649,
+    "2026-07": 1432,
+    "2026-08": 1395,
+    "2026-09": 1856,
+    "2026-10": 2194
+  },
+  "own_all_message_types": {
+    "3": 727,
+    "1": 9616,
+    "43": 19,
+    "50": 116,
+    "47": 127,
+    "49": 278,
+    "34": 12,
+    "48": 1,
+    "42": 5
+  },
+  "safe_common_short_replies": {
+    "好": 141,
+    "好的": 19,
+    "好滴": 1,
+    "嗯": 6,
+    "嗯嗯": 1,
+    "哦": 134,
+    "哦哦": 5,
+    "行": 23,
+    "行吧": 1,
+    "可以": 22,
+    "可以的": 8,
+    "对": 57,
+    "对的": 7,
+    "是的": 1,
+    "不是": 4,
+    "没有": 8,
+    "没事": 6,
+    "谢谢": 5,
+    "收到": 5,
+    "不知道": 13,
+    "哈哈": 12,
+    "哈哈哈": 3,
+    "哈哈哈哈": 2,
+    "确实": 12,
+    "好吧": 2,
+    "OK": 2,
+    "ok": 74,
+    "？": 53,
+    "?": 7
+  },
+  "predefined_expression_counts": {
+    "然后": {
+      "messages": 142,
+      "chats": 25,
+      "occurrences": 152
+    },
+    "就是": {
+      "messages": 185,
+      "chats": 34,
+      "occurrences": 195
+    },
+    "我觉得": {
+      "messages": 2,
+      "chats": 1,
+      "occurrences": 2
+    },
+    "我感觉": {
+      "messages": 3,
+      "chats": 3,
+      "occurrences": 3
+    },
+    "感觉": {
+      "messages": 72,
+      "chats": 20,
+      "occurrences": 80
+    },
+    "应该": {
+      "messages": 58,
+      "chats": 23,
+      "occurrences": 58
+    },
+    "可能": {
+      "messages": 51,
+      "chats": 20,
+      "occurrences": 51
+    },
+    "好像": {
+      "messages": 34,
+      "chats": 12,
+      "occurrences": 34
+    },
+    "其实": {
+      "messages": 29,
+      "chats": 15,
+      "occurrences": 29
+    },
+    "主要": {
+      "messages": 18,
+      "chats": 11,
+      "occurrences": 19
+    },
+    "因为": {
+      "messages": 75,
+      "chats": 23,
+      "occurrences": 75
+    },
+    "所以": {
+      "messages": 77,
+      "chats": 17,
+      "occurrences": 79
+    },
+    "但是": {
+      "messages": 57,
+      "chats": 19,
+      "occurrences": 61
+    },
+    "不过": {
+      "messages": 15,
+      "chats": 7,
+      "occurrences": 15
+    },
+    "不一定": {
+      "messages": 3,
+      "chats": 3,
+      "occurrences": 3
+    },
+    "能不能": {
+      "messages": 14,
+      "chats": 9,
+      "occurrences": 14
+    },
+    "可以吗": {
+      "messages": 3,
+      "chats": 3,
+      "occurrences": 3
+    },
+    "怎么": {
+      "messages": 108,
+      "chats": 26,
+      "occurrences": 108
+    },
+    "为什么": {
+      "messages": 27,
+      "chats": 7,
+      "occurrences": 27
+    },
+    "为啥": {
+      "messages": 94,
+      "chats": 15,
+      "occurrences": 94
+    },
+    "咋": {
+      "messages": 181,
+      "chats": 21,
+      "occurrences": 181
+    },
+    "要不": {
+      "messages": 23,
+      "chats": 14,
+      "occurrences": 23
+    },
+    "先": {
+      "messages": 143,
+      "chats": 29,
+      "occurrences": 148
+    },
+    "再": {
+      "messages": 100,
+      "chats": 26,
+      "occurrences": 104
+    },
+    "比如": {
+      "messages": 9,
+      "chats": 6,
+      "occurrences": 9
+    },
+    "如果": {
+      "messages": 21,
+      "chats": 11,
+      "occurrences": 22
+    },
+    "是不是": {
+      "messages": 32,
+      "chats": 15,
+      "occurrences": 33
+    },
+    "有没有": {
+      "messages": 34,
+      "chats": 18,
+      "occurrences": 35
+    },
+    "不是": {
+      "messages": 209,
+      "chats": 31,
+      "occurrences": 217
+    },
+    "而是": {
+      "messages": 3,
+      "chats": 2,
+      "occurrences": 3
+    },
+    "哈哈": {
+      "messages": 28,
+      "chats": 7,
+      "occurrences": 34
+    },
+    "[捂脸]": {
+      "messages": 1,
+      "chats": 1,
+      "occurrences": 1
+    },
+    "[笑哭]": {
+      "messages": 0,
+      "chats": 0,
+      "occurrences": 0
+    },
+    "谢谢": {
+      "messages": 27,
+      "chats": 14,
+      "occurrences": 27
+    },
+    "麻烦": {
+      "messages": 7,
+      "chats": 5,
+      "occurrences": 7
+    },
+    "老师": {
+      "messages": 151,
+      "chats": 24,
+      "occurrences": 157
+    },
+    "您": {
+      "messages": 4,
+      "chats": 3,
+      "occurrences": 7
+    },
+    "你好": {
+      "messages": 43,
+      "chats": 10,
+      "occurrences": 44
+    },
+    "您好": {
+      "messages": 0,
+      "chats": 0,
+      "occurrences": 0
+    },
+    "直接": {
+      "messages": 114,
+      "chats": 22,
+      "occurrences": 121
+    },
+    "就": {
+      "messages": 531,
+      "chats": 42,
+      "occurrences": 582
+    },
+    "啊": {
+      "messages": 331,
+      "chats": 37,
+      "occurrences": 344
+    },
+    "吧": {
+      "messages": 372,
+      "chats": 36,
+      "occurrences": 373
+    },
+    "呗": {
+      "messages": 97,
+      "chats": 20,
+      "occurrences": 97
+    },
+    "嘛": {
+      "messages": 33,
+      "chats": 14,
+      "occurrences": 35
+    },
+    "呢": {
+      "messages": 77,
+      "chats": 19,
+      "occurrences": 77
+    },
+    "啥": {
+      "messages": 536,
+      "chats": 39,
+      "occurrences": 544
+    },
+    "意思": {
+      "messages": 135,
+      "chats": 28,
+      "occurrences": 135
+    },
+    "问题": {
+      "messages": 59,
+      "chats": 22,
+      "occurrences": 61
+    },
+    "不用": {
+      "messages": 61,
+      "chats": 22,
+      "occurrences": 62
+    },
+    "不对": {
+      "messages": 15,
+      "chats": 5,
+      "occurrences": 15
+    },
+    "等会": {
+      "messages": 51,
+      "chats": 17,
+      "occurrences": 51
+    },
+    "晚点": {
+      "messages": 31,
+      "chats": 15,
+      "occurrences": 32
+    },
+    "一下": {
+      "messages": 404,
+      "chats": 40,
+      "occurrences": 419
+    },
+    "发一下": {
+      "messages": 6,
+      "chats": 5,
+      "occurrences": 6
+    },
+    "帮": {
+      "messages": 61,
+      "chats": 18,
+      "occurrences": 62
+    },
+    "把": {
+      "messages": 139,
+      "chats": 23,
+      "occurrences": 144
+    },
+    "请问": {
+      "messages": 0,
+      "chats": 0,
+      "occurrences": 0
+    },
+    "我看看": {
+      "messages": 11,
+      "chats": 6,
+      "occurrences": 11
+    },
+    "我试试": {
+      "messages": 1,
+      "chats": 1,
+      "occurrences": 1
+    }
+  },
+  "turn_definition": "consecutive eligible own text messages, no intervening non-system other/media message, adjacent gap <=120 seconds",
+  "turns": {
+    "count": 6609,
+    "median_messages": 1,
+    "multi_message_turns": 2004,
+    "messages_in_multi_message_turns": 4909,
+    "three_or_more_message_turns": 561
+  },
+  "sampling_concentration": {
+    "largest_chat_share": 0.4868,
+    "top_five_chat_share": 0.6543
+  },
+  "limitations": [
+    "Sent by the owner is not proof of original authorship.",
+    "The filtering rules are heuristics, not AI detection.",
+    "Chat samples do not establish an article or formal-document voice.",
+    "Relationship, personality and private facts are not inferred.",
+    "Phrase counts are substring counts; one message may match several phrases.",
+    "The current readable local corpus begins in February 2026."
+  ]
+}
